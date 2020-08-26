@@ -1,0 +1,849 @@
+@font-face {
+    font-family: 'Pacifico';
+    src:url(../fonts/Pacifico.ttf) format('truetype');
+}
+
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.features [class*="col-"]{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.close {
+    font-size: 4em;
+    color: white; 
+    opacity: 1;
+}
+
+.close:hover{
+    color: white;
+}
+
+.modal-fullscreen {
+  background: rgba(0, 0, 0, 0.9);
+}
+.modal-fullscreen .modal-content {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+    
+}
+
+.modal-header{
+    border-bottom: black;
+
+}
+
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.modal-content {
+  height: 100%;
+  min-height: 100%;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+section{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#contact{
+    padding-top: 200px;
+    padding-bottom: 6.5%;
+}
+
+#cottage-section p{
+    text-align: justify;
+}
+
+.section-wrap{
+    margin-bottom: 60px;
+    min-height: 100%;
+    padding-top: 200px;
+}
+
+#rates .col-lg.4{
+    text-align: right;
+}
+/*
+.rates-div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+*/
+
+.carousel-inner .item{
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+} 
+
+#carousel img{
+    height: 800px;
+}
+
+.rates-table{
+    padding: 50px 50px 50px 50px; border-radius: 5px 5px 5px 5px;
+    background-color: lightgray;
+}
+
+.rates-div span{
+    text-align: center;
+}
+
+.cottage-wrapper{
+    width: 80%; 
+    margin-left:10%;
+}
+
+.gray{
+    background: lightgray;
+}
+
+.section-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 40px;
+    font-family: 'Marcellus', serif;
+}
+
+.section-heading2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5em;
+    font-family: 'Marcellus', serif;
+}
+
+.section-heading3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    font-family: 'Marcellus', serif;
+}
+
+.section-heading4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5em;
+}
+
+.content-heading{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+
+html, body{
+
+    font-family: 'Raleway', serif;
+    /*
+    background: url('../img/Bush-BG.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    */
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper{
+    background: white;
+}
+
+#inclusions{
+    width: 100%; 
+    background-color: lightgray; 
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    -webkit-flex: auto;
+    flex: auto;
+}
+
+.jumbotron-content-wrapper{
+    padding-bottom: 20%;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: bold;
+}
+
+.carousel-home{
+    margin-top: 83px;
+}
+
+.carousel-caption{
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    margin-bottom: 10%;
+    font-family: 'Raleway', serif;
+}
+
+.carousel-caption p{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image:none !important;
+    -webkit-filter:none !important;
+    -moz-filter:none !important;
+    -ms-filter:none !important;
+    filter:none !important;
+    color: white;
+}
+
+.carousel-inner .item{
+    -webkit-transition: -webkit-transform .5s;
+   -o-transition: -o-transform .5s;
+   transition: transform .5s;
+}
+
+.button-wrap{
+    padding: 8px 8px 8px 8px;
+    background-color: transparent;
+    width: 200px;
+    margin: 0 auto; 
+}
+
+.carousel-caption a{
+    text-decoration: none !important;
+    color: white;
+}
+
+.jumbo-btn{
+    padding: 8px 8px 8px 8px;
+    border: 2px solid white;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+overlay:hover .villa-desc{
+    display: block;
+    
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.features{
+    margin-top: 5px;
+}
+
+.villa-desc{
+    width: 90%;
+    position: absolute;
+    bottom: 40%;
+    color: white;
+    font-family: none'Marcellus', 'serif';
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.location{
+    padding-bottom: 20px;
+}
+
+.toc li{
+    font-size: 1.2em;
+}
+
+.toc ul li{
+    font-size: 1em;
+}
+
+#footer{
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+/*iframe styling*/
+#frame{
+    width: 1px;
+    min-width: 100%;
+    *width: 100%;
+    /*height: 885px;*/
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.line-separator{
+    height:1px;
+    border-bottom:1px solid lightgray;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.line-separator2{
+    height:1px;
+    background:#717171;
+    border-bottom:1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cottage-desc{
+    margin-bottom:50px; 
+    text-align: justify; 
+    width:80%; 
+    margin-left:10%;
+}
+
+.overlay img{
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+    filter: brightness(50%);
+    
+}
+
+.overlay:hover img{
+    -webkit-filter: brightness(100%);
+    -moz-filter: brightness(100%);
+    -ms-filter: brightness(100%);
+    filter: brightness(100%);
+    
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.overlay2:hover img{
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+    filter: brightness(50%);
+    
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#gallery-wrapper .row{
+    margin-bottom: 30px;
+}
+
+#gallery-wrapper [class*="col-"]{
+    margin-bottom: 10px;
+}
+
+#gallery{
+    margin: 20px auto;
+}
+
+#gallery .carousel-indicators {
+    margin: 5px 0 0;
+    overflow: auto;
+    -webkit-overflow-scrolling:touch !important;
+    position: static;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+#gallery .gallery-slide .carousel-indicators li {
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    display: inline-block;
+    height: 33px;
+    margin: 0 !important;
+    width: 54px;
+}
+
+#gallery .gallery-slide .carousel-indicators li img {
+    border: 1px solid white;
+    float: left;
+    height: 31px;
+    width: 54px;
+    left: 0;
+    
+}
+
+#gallery .gallery-slide .active img {
+    -webkit-filter: brightness(70%);
+    -moz-filter: brightness(70%);
+    -ms-filter: brightness(70%);
+    filter: brightness(70%);
+    border: 2px solid lightgray;
+}
+
+#gallery .carousel-outer {
+    position: relative;
+}
+
+@media all 
+and (max-device-width : 1366px) {
+    .features{
+    padding: 10px 10px 10px 10px; 
+    border-radius: 5px 5px 5px 5px; 
+    border: 1px solid dimgray; 
+    margin-top: 20px;
+}
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    .features{
+        padding: 10px 10px 10px 10px; 
+        border-radius: 5px 5px 5px 5px; 
+        border: 1px solid dimgray; 
+        margin-top: 20px;
+    }
+    
+    .villa-desc{
+        width: 95%;
+    }
+
+    .modal-dialog { 
+        height: 70%;
+    }
+
+    .carousel-home .carousel-caption{
+        margin-bottom: 15%;
+    }
+    
+    .carousel-home .section-heading4{
+        font-size: 2.5em;
+    }
+    
+    .carousel-home .carousel-caption p{
+        font-size: 1.5em;
+    }
+    
+    .navbar-default .navbar-brand{
+        color: white;
+        font-family: 'Marcellus', serif;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    
+    .navbar-default .navbar-brand:hover{
+        font-size: 2em;
+    }
+    
+    .navbar-header {
+      float: none;
+    }
+    .navbar-toggle {
+      display: block;
+    }
+    .navbar-collapse.collapse {
+      display: none!important;
+    }
+    .navbar-nav {
+      float: none!important;
+    }
+    .navbar-nav>li {
+      float: none;
+    }
+    .navbar-collapse.collapse.in{
+      display:block !important;
+    }
+    
+    #cottage-section p{
+        font-size: 0.85em;
+    }
+    
+    #inclusions .container [class*="col-"]{
+        font-size: 0.85em;
+    }
+    
+    #carousel img{
+        height: auto;
+    }
+    
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+    .features{
+        padding: 10px 10px 10px 10px; 
+        border-radius: 5px 5px 5px 5px; 
+        border: 1px solid dimgray; 
+        margin-top: 20px;
+    }
+    .villa-desc{
+        width: 95%;
+    }
+
+    .footer-fixed{
+        position: relative;
+    }
+    
+    .carousel-home{
+        margin-top: 83px;
+    }
+
+    .carousel-home .carousel-caption .section-heading4{
+        font-size: 2em;
+    }
+    
+    .carousel-home .carousel-caption p{
+        font-size: 1em;
+    }
+    
+
+    .navbar-default .navbar-brand{
+        color: white;
+        font-family: 'Marcellus', serif;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    
+    .navbar-default .navbar-brand:hover{
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-brand{
+        font-size: 1.3em;
+    }
+    
+    .navbar-header {
+      float: none;
+    }
+    .navbar-toggle {
+      display: block;
+    }
+    .navbar-collapse.collapse {
+      display: none!important;
+    }
+    .navbar-nav {
+      float: none!important;
+    }
+    .navbar-nav>li {
+      float: none;
+        font-size: 0.8em;
+    }
+    .navbar-collapse.collapse.in{
+      display:block !important;
+    }
+    
+    
+    #inclusions li{
+        font-size: 0.7em;
+    }
+    
+    .jumbo-btn{
+        font-size: 1em;
+    }
+    
+    .section-heading{
+        font-size: 2em;    
+    }
+    .frame-div{
+        overflow:scroll !important; -webkit-overflow-scrolling:touch !important;
+    }
+    #carousel img{
+        height: auto;
+    }
+    
+    p{
+        font-size: 0.8em;
+    }
+    
+    .toc li{
+        font-size: 0.9em;
+    }
+    
+    .toc ul li{
+        font-size: 0.8em;
+    }
+    
+    #inclusions{
+        font-size: 0.8em;
+    }
+    
+    #cottage-desc{
+        font-size: 1em;
+    }
+
+    h3{
+        font-size: 1.3em;
+    }
+    
+    .table-content{
+        font-size: 0.8em;
+    }
+}
+
+@media all and (max-width: 480px) { 
+    .features{
+        padding: 10px 10px 10px 10px; 
+        border-radius: 5px 5px 5px 5px; 
+        border: 1px solid dimgray; 
+        margin-top: 20px;
+    }
+    
+    .hero-banner{
+        height: 300px;
+    }
+    
+    .villa-desc{
+        width: 95%;
+    }
+    
+    .footer-fixed{
+        position: relative;
+    }
+    
+    .jumbo-btn{
+        font-size: 0.7em;
+        width: 70%;
+        padding: 5px 5px 5px 5px;
+    }
+    
+    .button-wrap{
+        padding: 5px 5px 5px 5px;
+        width: 70%;
+    }
+    
+    .carousel-home{
+        margin-top: 83px;
+    }
+    
+    .carousel-home .carousel-caption p{
+        font-size: 0.7em;
+        padding: 0;
+    }
+    
+    .carousel-home .carousel-caption .section-heading4{
+        font-size: 1em;
+    }
+    
+    .navbar-default .navbar-brand{
+        color: white;
+        font-family: 'Marcellus', serif;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    
+    .navbar-default .navbar-brand:hover{
+        font-size: 2em;
+    }
+    
+    .section-heading{
+        font-size: 2.5em;
+    }
+    
+    .cottage-wrapper p{
+        font-size: 0.8em;
+    }
+
+    #inclusions .container [class*="col-"]{
+        font-size: 0.5em;
+    }
+    
+    .navbar-header {
+      float: none;
+    }
+    .navbar-toggle {
+      display: block;
+    }
+    .navbar-collapse.collapse {
+      display: none!important;
+    }
+    .navbar-nav {
+      float: none!important;
+    }
+    .navbar-nav>li {
+      font-size: 0.8em;
+      float: none;
+    }
+    .navbar-collapse.collapse.in{
+      display:block !important;
+    }
+    
+    .section-heading{
+        font-size: 1.3em;
+    }
+    
+    .content-heading{
+        font-size: 0.9em;
+    }
+    
+    #about-us .section-content p{
+        font-size: 0.8em;
+    }
+    
+    #testimonials p{
+        font-size: 0.8em;
+    }
+    
+    #testimonials .content-heading{
+        font-size: 1.3em;
+    }
+    
+    #cottage-desc p{
+        font-size: 0.8em;
+    }
+    
+    #cottage-section h3{
+        font-size: 1em;
+    }
+    
+    #rates p{
+        font-size: 0.8em;
+    }
+    
+    #rates h3{
+        font-size:1em;
+    }
+    
+    #inclusions .container .section-heading3{
+        font-size: 1.2em;
+    }
+    
+    #footer{
+        font-size: 0.8em;
+    }
+    
+    .table-content{
+        font-size: 0.7em;
+    }
+    .frame-div{
+        overflow:scroll !important; -webkit-overflow-scrolling:touch !important;
+    }
+    
+    #carousel img{
+        height: auto;
+    }
+    
+    #booking h3{
+        font-size: 1.3em;
+    }
+    
+    .toc p{
+        font-size: 0.8em;
+    }
+    
+    .toc li{
+        font-size: 1em;
+    }
+    
+    .toc ul li{
+        font-size: 0.8em;
+    }
+    
+    #contact p{
+        font-size: 0.8em;
+    }
+    
+    #contact h3{
+        font-size:1em;
+    }
+    
+    .location{
+        font-size: 0.8em;
+    }
+  
+    .navbar-default .navbar-brand:hover{
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-brand{
+        font-size: 1.3em;
+    }
+    #testimonials p{
+        text-align: center;
+    }
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+/* CSS For iPad Pro landscape */
+@media all and (min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1024px) and (max-width: 1024px){
+
+    #inclusions{
+        padding-bottom: 118px;
+    }
+    
+    .villa-desc{
+        width: 90%;
+        position: absolute;
+        bottom: 40%;
+        color: white;
+        font-family: none'Marcellus', 'serif';
+        font-weight: bold;
+        font-size: 1.3em;
+        text-align: center;
+        display: inline-block;
+        margin-left: 0px;
+    }
+}

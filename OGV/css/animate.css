@@ -1,0 +1,31 @@
+.slide{
+  left:0;
+}
+
+.slide.ng-enter{
+  transition:0.20s linear all;
+  position:fixed;
+  z-index:inherit;
+  left:-100%;
+  height:inherit;
+}
+
+.slide.ng-leave{
+  transition:0.20s linear all;
+  position:fixed;
+  z-index:9999;
+  left:0;
+}
+
+.slide.ng-leave-active{
+  transition:0.20s linear all;
+  position:fixed;
+  left:-100%;
+  left:100%;
+}
+
+.slide.ng-enter-active{
+  transition:0.20s linear all;
+  left:0;
+  position:relative;
+}

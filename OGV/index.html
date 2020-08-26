@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html ng-app="interludes" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+    <head>
+        <meta charset="utf-8" /> 
+        <meta content="width=device-width, user-scalable=no" name="viewport">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- add something here -->
+        <meta property="og:image" content="" />
+        <title>Ocean Grove Villas</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Raleway|Noto+Serif|Slabo+27px' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Marcellus" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/menu.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/map.css" rel="stylesheet">
+        <script language="javascript" type="text/javascript">
+          function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+          }
+        </script>
+    </head>
+    
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="mainCtrl">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle button" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand" style="margin-top:10px;"><a style="text-decoration: none; color: white;" href="#home">OCEAN GROVE VILLAS</a></div>
+                </div>
+                <div class="navbar-collapse collapse pull-right">
+                    <ul class="nav navbar-nav">
+                        <li ng-class="{active: isActive('/villas')}"><a href="#villas">Villas</a></li>
+                        <li ng-class="{active: isActive('/gallery')}" class="dropdown">
+                            <a href="#gallery" class="dropdown-toggle" data-toggle="dropdown">Gallery</a>
+                            <ul class="dropdown-menu" style="background-color: dimgray">
+                                <li><a href="#gallery/villas">Villas</a></li>
+                                <li><a href="#gallery/property">Property</a></li>
+                                <li><a href="#gallery/beaches">Beaches</a></li>
+                            </ul>
+                        </li>
+                        <li ng-class="{active: isActive('/contact')}"><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div data-ng-view></div>
+        
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>103 Forster Drive, Bawley Point NSW 2539</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div style="text-align: center">
+                            <p>&copy; 2017 Ocean Grove Villas
+                - All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </section>
+        
+        <script src="lib/jquery-1.12.0.min.js"></script>
+        <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBmPCFkBHV30QsL2SklJDJCvulJs235rHs'></script>
+        <script src="lib/bootstrap.min.js"></script>
+        <script src="js/transition.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+        <script src="js/angular-simple-logger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-maps/2.3.3/angular-google-maps.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/main.js"></script>
+        <!--
+        <script src="https://www.jscache.com/wejs?wtype=rated&amp;uniq=815&amp;locationId=1775027&amp;lang=en_AU&amp;display_version=2"></script>
+        -->
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73453339-5"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-73453339-5');
+        </script>
+
+        <script>
+         
+            
+            
+        $(document).ready(function () {
+            $('.navbar-collapse a').click(function(){
+                $(".navbar-collapse").collapse('hide');
+            });
+            function CloseNav() {
+                $(".navbar-collapse").stop().css({ 'height': '1px' }).removeClass('in').addClass("collapse");
+                $(".navbar-toggle").stop().removeClass('collapsed');
+            }
+
+            $('body').click(function (event) {
+                var clickover = $(event.target);
+                var _opened = $(".navbar-collapse").hasClass("collapse in");
+                if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+                    $(".navbar-collapse").collapse('hide');
+                }
+
+            });
+        });
+        </script>
+    </body>
+</html>
