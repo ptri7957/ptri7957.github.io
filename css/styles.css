@@ -1,0 +1,170 @@
+body{
+  margin: 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-container{
+  height: 100vh;
+  line-height: 100vh;
+  margin-top: -50px;
+}
+
+.top-container .hero-content{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.top-container h1{
+  margin: 0 auto 0 auto;
+  font-family: 'Caveat', cursive;
+  font-size: 4em;
+  color: #66BFBF;
+}
+
+.top-container p{
+  font-size: 1.8em;
+  color: #66BFBF;
+}
+
+.work-hero{
+  height: 70vh;
+  line-height: 70vh;
+}
+
+h2{
+  font-size: 2em;
+}
+
+h3{
+  font-size: 1.5em;
+  color: #11999E;
+}
+
+hr{
+  border-style: dotted;
+  border-width: 10px;
+  border-color: #eaf6f6;
+  border-bottom: 0;
+  width: 20%;
+}
+
+.green-bg{
+  background-color: #e3fdfd;
+}
+
+.navbar-brand{
+  font-family: 'Caveat', cursive;
+  color: black;
+}
+
+.navbar-brand:hover{
+  color: black;
+}
+
+a{
+  text-decoration: none;
+}
+
+.bottom-container a{
+  color: #11999E;
+}
+
+.bottom-container a:after{
+  color: #11999E;
+}
+
+.navbar-collapse .nav-item a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-item{
+  margin-right: 30px;
+}
+
+.section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main-content{
+  margin: 50px auto;
+}
+
+.profile{
+  width: 50%;
+}
+
+.profile img{
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.skill-item{
+  width: 80%;
+  margin: 30px auto 0 auto;
+
+}
+
+.skill-item p, .skill-item h3{
+  line-height: 2;
+  text-align: left;
+}
+
+
+.tech-item img{
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.tech-item{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.closed, .open{
+  color: #11999E;
+}
+
+.bottom-container{
+  background-color: #71c9ce;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+}
+
+.contact-me p{
+  margin-bottom: 40px;
+}
+
+.contact-me .btn{
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #71c9ce;
+  color: white;
+}
+
+.bottom-container a:hover{
+  text-decoration: none;
+}
+
+.card{
+  margin-bottom: 20px;
+  min-height: 600px;
+}
+
+/* Tablet Size */
+@media (max-width: 1028px){
+  .skill-item p, .skill-item h3{
+    text-align: center;
+  }
+
+  .card{
+    font-size: 0.8em;
+    min-height: 520px;
+  }
+}
