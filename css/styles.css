@@ -62,7 +62,7 @@ hr{
   font-family: 'Caveat', cursive;
 }
 
-.navbar-brand:hover{
+.navbar-light .navbar-brand:hover{
   color: white;
 }
 
@@ -145,6 +145,10 @@ a{
 
 .bottom-container a:hover{
   text-decoration: none;
+}
+
+.bottom-container p{
+  color: white;
 }
 
 .card{
