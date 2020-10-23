@@ -54,16 +54,13 @@ hr{
   background-color: #222;
 }
 
-.navbar-light .navbar-brand{
-  color: white;
+.white-bg{
+  background-color: white;
 }
+
 
 .navbar-brand{
   font-family: 'Caveat', cursive;
-}
-
-.navbar-light .navbar-brand:hover{
-  color: white;
 }
 
 a{
@@ -71,7 +68,7 @@ a{
 }
 
 .navbar-collapse .nav-item a{
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: bold;
 }
@@ -166,6 +163,10 @@ a{
 
 .footer-link::after{
   color: white;
+}
+
+.work .card-body{
+  border-top: 1px solid lightgray;
 }
 
 /* Tablet Size */
