@@ -31,7 +31,7 @@ html {
 .top-container{
     height: 70vh;
     line-height: 70vh;
-    background-image: url("../img/bh.PNG");
+    background-image: url("../img/bh.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
